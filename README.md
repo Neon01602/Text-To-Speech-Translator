@@ -1,33 +1,55 @@
 # Text-to-Speech Translator
 
-## Description
+## Overview
 
-The Text-to-Speech Translator is a Python application that leverages advanced machine learning models and natural language processing techniques to recognize hand gestures representing letters and translate them into spoken language. This application is designed for educational purposes and aims to assist individuals in learning sign language by providing real-time translations of hand gestures into various spoken languages.
+The **Text-to-Speech Translator** is a Python application that leverages speech recognition, translation, and text-to-speech technologies to convert spoken language into translated audio. Users can speak in their language, and the application will recognize the speech, translate it into a selected target language, and generate an audio file of the translation.
 
 ## Features
 
-- **Hand Gesture Recognition**: Utilizes computer vision to detect hand gestures and recognize corresponding letters.
-- **Multi-Language Support**: Translates recognized letters into multiple languages, including but not limited to Spanish, French, German, Chinese, and more.
-- **Text-to-Speech Conversion**: Converts translated text into speech using Google Text-to-Speech (gTTS).
-- **User -Friendly Interface**: Built with Tkinter for a simple and intuitive user experience.
-- **Snapshot Functionality**: Allows users to take snapshots of recognized gestures and save them for future reference.
+- **Speech Recognition**: Captures spoken input using the microphone.
+- **Language Translation**: Translates recognized speech into various languages using the Google Translate API.
+- **Text-to-Speech**: Converts translated text into audio using Google Text-to-Speech (gTTS).
+- **Multi-language Support**: Supports a wide range of languages for translation.
+- **Audio Playback**: Plays the generated audio file automatically.
+
+## Supported Languages
+
+The application supports the following languages for translation:
+
+- Spanish (es)
+- French (fr)
+- German (de)
+- Italian (it)
+- Chinese (Simplified) (zh-cn)
+- Japanese (ja)
+- Korean (ko)
+- Russian (ru)
+- Arabic (ar)
+- Portuguese (pt)
+- Hindi (hi)
+- Bengali (bn)
+- Turkish (tr)
+- Vietnamese (vi)
+- Tamil (ta)
+- Telugu (te)
+- Marathi (mr)
+- Gujarati (gu)
+- Malayalam (ml)
+- Kannada (kn)
+- Punjabi (pa)
+- Urdu (ur)
+- Assamese (as)
 
 ## Requirements
 
-To run this project, you will need the following libraries:
+To run this application, you will need the following Python packages:
 
-- Python 3.x
-- OpenCV
-- Mediapipe
-- TensorFlow
-- NumPy
-- gTTS
-- SpeechRecognition
-- Googletrans
-- Pillow
-- Tkinter
+- `speech_recognition`
+- `googletrans`
+- `gtts`
+- `playsound`
 
-You can install the required libraries using pip:
+You can install these packages using pip:
 
 ```bash
-pip install opencv-python mediapipe tensorflow numpy gtts SpeechRecognition googletrans==4.0.0-rc1 Pillow
+pip install SpeechRecognition googletrans gTTS playsound
